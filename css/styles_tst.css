@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header_test {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgb(0, 0, 0, 0);
+    color: #FFFFFF;
+}
+
+.inst_test {
+    position: static;
+    background-image: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+    height: 1000px;
+    width: 100%;
+}
+
+.form_1 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.lbl_1 {
+    font-size: 23px;
+}
+
+.lbl_2 {
+    font-size: 19px;
+}
+
+.form_2 {
+    position: absolute;
+    top: 335px;
+    left: 50px;
+}
+
+.popup {
+    background-color: #ffffff;
+    color: #888888;
+    height: 245px;
+    left: 100%;
+    padding: 20px;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 550px;
+    z-index: 101;
+    -moz-box-shadow: 0px 0px 10px 1px #888888;
+    -webkit-box-shadow: 0px 0px 10px 1px #888888;
+    box-shadow: 0px 0px 10px 1px #888888;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.overlay {
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+a.close {
+    background: url("cancel.png") repeat scroll left top transparent;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    left: 32px;
+    position: relative;
+    top: -33px;
+    width: 26px;
+}
