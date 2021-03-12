@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.h {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+}
+
+.contenedor {
+    position: static;
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+    height: 1500px;
+    width: 100%;
+}
+
+.contenedor article {
+    line-height: 28px;
+}
+
+.contenedor article .btn-abrir-popup {
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5E7DE3;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+    background: rgba(94, 125, 227, .9);
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #F8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    transition: .3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+    transition: .3s ease all;
+    color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+h5{
+    opacity: 0;
+}
+.popup h4 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.popup .ac {
+    border: rgb(0, 0, 0, 0);
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.popup .er {
+    border: rgb(0, 0, 0, 0);
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.popup form .btn-submit {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color: #fff;
+    background: #5E7DE3;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover {
+    background: rgba(94, 125, 227, .9);
+}
+
+.popup.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.popup.active h4 {
+    animation: entradaTitulo .8s ease .5s forwards;
+}
+
+.popup.active h5 {
+    animation: entradaSubtitulo .8s ease .5s forwards;
+}
+
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaSubtitulo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.in {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 22px;
+}
+
+.p1 .tlt1 {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    font-size: 18px;
+}
+
+.p1 .td{
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    font-size: 16px;
+}
+
+.p2 .tlt2 {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    font-size: 18px;
+}
+
+.p2 .td2{
+    position: absolute;
+    top: 330px;
+    left: 100px;
+    font-size: 16px;
+}
+
+
+.p3 .tlt3 {
+    position: absolute;
+    top: 450px;
+    left: 80px;
+    font-size: 18px;
+}
+
+.p3 .td3{
+    position: absolute;
+    top: 480px;
+    left: 100px;
+    font-size: 16px;
+}

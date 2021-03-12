@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width" , initial-scale=1.0, maximum-scale=1>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test</title>
+        <link rel="stylesheet" href="css/styles_tst.css">
+        <script src="js/zoom.js"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+    <body>
+
+        <div class="h">
+            <h1>Test</h1>
+        </div>
+            <div class="contenedor">
+                <article>
+                    <label class="in">Responde correctamente las siguientes suceciones</label>
+                <form class="p1">    
+                    <label class="tlt1">5, 12, 21, 32, ?</label>
+                    <table class="td">
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="ch1" id="opc1" onclick="unCheck()"> 46</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc2" onclick="unCheck()"> 39</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc3" onclick="unCheck()"> 50</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc4" onclick="unCheck()"> 45</input>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <form class="p2">    
+                    <label class="tlt2">--, --, --, --, --</label>
+                    <table class="td2">
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="ch1" id="opc11" onclick="unCheck2()"> --</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc21" onclick="unCheck2()"> --</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc31" onclick="unCheck2()"> --</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc41" onclick="unCheck2()"> --</input>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <form class="p3">    
+                    <label class="tlt3">--, --, --, --, --</label>
+                    <table class="td3">
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="ch1" id="opc12" onclick="unCheck3()"> --</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc22" onclick="unCheck3()"> --</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc32" onclick="unCheck3()"> --</input>
+                                <br>
+                                <input type="checkbox" class="ch1" id="opc42" onclick="unCheck3()"> --</input>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <button id="btn-abrir-popup" class="btn-abrir-popup" onclick="res()">Ver resultado</button>
+                </article>
+
+                    <div class="overlay" id="overlay">
+                        <div class="popup" id="popup">
+                            <form name="ress" id="ress">
+                            <h4>Aciertos</h4>
+                            <h5>
+                                <input type="text" name="ac" id="ac" class="ac" readonly="readonly" disabled="disabled"></input>
+                            </h5>
+                            <h4>Incorrectos</h4>
+                            <h5>
+                                <input type="text" name="er" id="er" class="er" readonly="readonly" disabled="disabled"></input>
+                            </h5>
+                                    <a id="btn-cerrar-popup" class="btn-cerrar-popup">
+                                        <input type="submit" class="btn-submit" value="Aceptar">
+                                    </a>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        <script src="js/functions.js"></script>
+    </body>
+</html>
