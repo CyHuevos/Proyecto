@@ -375,6 +375,46 @@ function unCheck9(){
     }                
 }
 
+function unCheck10(){
+    var op1=document.getElementById("opc10-1");
+    var op2=document.getElementById("opc10-2");
+    var op3=document.getElementById("opc10-3");
+    var op4=document.getElementById("opc10-4");
+
+    op1.onclick=function(){
+        if(op1.checked != false){ 
+            op2.checked =null; 
+            op3.checked=null;
+            op4.checked=null;
+        }
+    }
+
+    op2.onclick=function(){
+        if(op2.checked != false){ 
+            op1.checked =null; 
+            op3.checked=null;
+            op4.checked=null;
+        }
+    }
+
+
+    op3.onclick=function(){
+        if(op3.checked != false){ 
+            op2.checked =null; 
+            op1.checked=null;
+            op4.checked=null;
+        }
+    }
+
+    op4.onclick=function(){
+        if(op4.checked != false){ 
+            op2.checked =null; 
+            op3.checked=null;
+            op1.checked=null;
+        }
+    }                
+}
+
 function res(){
     var tr1=document.getElementById('opc1-4');
     var tr2=document.getElementById('opc2-2');
@@ -384,6 +424,8 @@ function res(){
     var tr6=document.getElementById('opc6-2');
     var tr7=document.getElementById('opc7-3');
     var tr8=document.getElementById('opc8-2');
+    var tr9=document.getElementById('opc9-3');
+    var tr10=document.getElementById('opc10-2');
 
     var re=0;
     var nr=0;
@@ -432,6 +474,18 @@ function res(){
     }
 
     if (tr8.checked==true) {
+        re=re+1;
+    }else{
+        nr=nr+1;
+    }
+
+    if (tr9.checked==true) {
+        re=re+1;
+    }else{
+        nr=nr+1;
+    }
+
+    if (tr10.checked==true) {
         re=re+1;
     }else{
         nr=nr+1;
